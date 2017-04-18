@@ -1,4 +1,4 @@
-from bootcamp import prime_nums
+from prime_number import prime_nums
 import unittest
 class GeneratePrimeNumbersTestCases(unittest.TestCase):
 	def test_for_negative_input(self):
@@ -8,10 +8,10 @@ class GeneratePrimeNumbersTestCases(unittest.TestCase):
 		with self.assertRaises(ValueError):
 			result=prime_nums('h')
 	def test_integer_one(self):
-		result=prime_nums(0)
+		result=prime_nums(1)
 		self.assertEqual(result,'Zero or one cannot be a prime number' )
 	def test_integer_zero(self):
-		result=prime_nums(1)
+		result=prime_nums(0)
 		self.assertEqual(result,'Zero or one cannot be a prime number')
 	def test_returns_a_list_of_generated_prime_numbers(self):
 		result=prime_nums(10) 
