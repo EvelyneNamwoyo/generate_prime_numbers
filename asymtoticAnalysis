@@ -1,0 +1,14 @@
+input=length n
+looping through all the numbers= O(n)
+Going through the list twice in the range 1..n
+outer loop is at range 2..n+1
+n = 2..n+1
+for i, which is every integer n
+do anoher inner loop at a range 2..i
+inner loop takes m iterations
+so total iterations=m*n
+but m==n
+hence n^2
+for worst case scenario O(n^2)
+
+
